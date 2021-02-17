@@ -17,7 +17,15 @@
     </nav>
 
     <p>This is the post page</p>
-    <input type="text"></input>
+
+    <form onsubmit="return false">
+        <label for="content_input">Enter your post here</label>
+        <input id="content_input" type="text"></input>
+        <input type="submit" value="Submit" onclick="submitForm()">
+    </form>
+
+    <script src="src/services/postService.js"></script>
+    <script src="src/post.js"></script>
 </body>
 
 </html>
