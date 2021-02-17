@@ -36,6 +36,29 @@ class postService {
         })
     }
 
+    updatePostById(id, content) {
+        let post =  {
+            content: content
+        }
+
+        return fetch(this.baseURL + '/' + id, {
+            method: 'PATCH',
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify({ post })
+        })
+    }
+
+    deletePostById(id) {
+        return fetch(this.baseURL + '/' + id, {
+            method: 'DELETE',
+            headers: {
+                'content-type': 'application/json',
+            }
+        })
+    }
+
 
 
 }
