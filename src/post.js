@@ -1,5 +1,6 @@
 const myPostService = new postService();
 
+// This is part of the HW7 commit
 function submitForm() {
     let content = $('#content_input').val();
     console.log(content);
