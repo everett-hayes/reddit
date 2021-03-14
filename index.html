@@ -23,21 +23,19 @@
         <button class="btn">Vote</button>
     </div> -->
 
-    <div id="postContainer">
-        <div id="post-0" class="post">
-            <div id="post-voting" class="postVote">
-                <button class="btn" value="0" onclick="vote(this.value, 'up');"><i class="fa fa-arrow-up"></i></button>
-                <p id="post-0-vote" class="voteCount">4</p>
-                <button class="btn" value="0" onclick="vote(this.value, 'down');"><i class="fa fa-arrow-down"></i></button>
-            </div>
-            <div id="post-0-content">
-                This is the content of the post
-            </div>
-        </div>
-    </div>
+    <i id="mySpinner" class="fas fa-spinner fa-pulse fa-5x spinny"></i>
+
+    <div id="postContainer"></div>
 
     <script src="src/services/postService.js"></script>
     <script src="src/index.js"></script>
+
+    <script>
+        $(document).ready(function(e) {
+            REDDIT_INDEX_PAGE.render();
+        });
+    </script>
+
 </body>
 
 </html>
