@@ -13,6 +13,7 @@
     display: inline-flex;
     border: 1px solid;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .postVote { 

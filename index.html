@@ -17,16 +17,20 @@
         <a class="navbar-brand" href="./search.html">Search</a>
     </nav>
 
-    
+    <!-- <div>
+        Sort By:
+        <button class="btn">Recent</button>
+        <button class="btn">Vote</button>
+    </div> -->
 
     <div id="postContainer">
         <div id="post-0" class="post">
             <div id="post-voting" class="postVote">
-                <button class="btn"><i class="fa fa-arrow-up"></i></button>
-                <p class="voteCount">4</p>
-                <button class="btn"><i class="fa fa-arrow-down"></i></button>
+                <button class="btn" value="0" onclick="vote(this.value, 'up');"><i class="fa fa-arrow-up"></i></button>
+                <p id="post-0-vote" class="voteCount">4</p>
+                <button class="btn" value="0" onclick="vote(this.value, 'down');"><i class="fa fa-arrow-down"></i></button>
             </div>
-            <div>
+            <div id="post-0-content">
                 This is the content of the post
             </div>
         </div>

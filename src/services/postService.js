@@ -22,10 +22,7 @@ class postService {
                 .catch(error => console.warn(error));
     }
 
-    createPost(content) {
-        let post =  {
-            content: content
-        }
+    createPost(post) {
 
         return fetch(this.baseURL, {
             method: 'POST',
@@ -36,10 +33,7 @@ class postService {
         })
     }
 
-    updatePostById(id, content) {
-        let post =  {
-            content: content
-        }
+    updatePostById(id, post) {
 
         return fetch(this.baseURL + '/' + id, {
             method: 'PATCH',
