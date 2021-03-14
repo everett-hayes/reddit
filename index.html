@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8041e9a38b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,12 +17,20 @@
         <a class="navbar-brand" href="./search.html">Search</a>
     </nav>
 
-    <p>This is the home page</p>
     
-    <h3>All of the posts are below me</h3>
-    <table id="postTable">
-        <tbody id="postTableBody"></tbody>
-    </table>
+
+    <div id="postContainer">
+        <div id="post-0" class="post">
+            <div id="post-voting" class="postVote">
+                <button class="btn"><i class="fa fa-arrow-up"></i></button>
+                <p class="voteCount">4</p>
+                <button class="btn"><i class="fa fa-arrow-down"></i></button>
+            </div>
+            <div>
+                This is the content of the post
+            </div>
+        </div>
+    </div>
 
     <script src="src/services/postService.js"></script>
     <script src="src/index.js"></script>

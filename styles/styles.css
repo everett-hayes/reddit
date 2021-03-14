@@ -1,3 +1,27 @@
 .navbar-custom {
-    background-color: #FF5700
+    background-color: #FF5700;
+}
+
+#postContainer {
+    padding: 1em;
+    display: grid;
+}
+
+.post {
+    padding: 1em;
+    background-color: #EFF7FF;
+    display: inline-flex;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.postVote { 
+    background-color: #EFF7FF;
+    display: grid;
+}
+
+.voteCount {
+    text-align: center;
+    margin-top: -4px;
+    margin-bottom: -4px;
 }
