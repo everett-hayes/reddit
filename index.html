@@ -17,15 +17,17 @@
         <a class="navbar-brand" href="./search.html">Search</a>
     </nav>
 
-    <!-- <div>
-        Sort By:
-        <button class="btn">Recent</button>
-        <button class="btn">Vote</button>
-    </div> -->
-
-    <i id="mySpinner" class="fas fa-spinner fa-pulse fa-5x spinny"></i>
-
-    <div id="postContainer"></div>
+    <div id="pageContainer">
+        <div id="btnContainer">
+            Sort By:
+            <button class="btn-custom" onclick="REDDIT_INDEX_PAGE.renderContainer('recent');">Recent</button>
+            <button class="btn-custom" onclick="REDDIT_INDEX_PAGE.renderContainer('vote');">Popular</button>
+        </div>
+    
+        <i id="mySpinner" class="fas fa-spinner fa-pulse fa-5x spinny"></i>
+    
+        <div id="postContainer"></div>
+    </div>
 
     <script src="src/services/postService.js"></script>
     <script src="src/index.js"></script>

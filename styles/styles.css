@@ -31,3 +31,23 @@
     margin-left: 50%;
     margin-top: 30%;
 }
+
+#btnContainer {
+    margin-bottom: -10px;
+    padding: 1em;
+}
+
+.btn-custom {
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #EFF7FF;
+    border: 1px solid;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-
+}

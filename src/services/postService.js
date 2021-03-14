@@ -35,6 +35,8 @@ class postService {
 
     updatePostById(id, post) {
 
+        console.log(id);
+
         return fetch(this.baseURL + '/' + id, {
             method: 'PATCH',
             headers: {
@@ -42,6 +44,8 @@ class postService {
             },
             body: JSON.stringify({ post })
         })
+
+
     }
 
     deletePostById(id) {
