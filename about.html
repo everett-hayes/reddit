@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/8041e9a38b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,27 +17,13 @@
         <img id="logoTest" src="img/redditLogoBlack.png" alt="Reddit Alien Logo">
     </nav>
 
-    <div id="pageContainer">
-        <div id="btnContainer">
-            Sort By:
-            <button class="btn-custom" onclick="REDDIT_INDEX_PAGE.renderContainer('recent');">Recent</button>
-            <button class="btn-custom" onclick="REDDIT_INDEX_PAGE.renderContainer('vote');">Popular</button>
-        </div>
-    
-        <i id="mySpinner" class="fas fa-spinner fa-pulse fa-5x spinny"></i>
-    
-        <div id="postContainer"></div>
+    <div id="aboutContainer">
+        <h5>About Everett's Reddit</h5>
+        <p>Hi this is Everett's Reddit, an imitation of the popular website Reddit. This is the individual final project for CSC-324 at Grinnell College. Explore other posts and create your own!</p>
+        <p>In the future I would love to add the following: user login & auth, a subreddit feature, and commenting on posts.</p>
+        <p>All credit to <a href="https://www.iconfinder.com/icons/5305162/forum_reddit_reddit_logo_icon" target="_blank">this website</a> for use of their black reddit logo icon</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-
-    <script src="src/services/postService.js"></script>
-    <script src="src/index.js"></script>
-
-    <script>
-        $(document).ready(function(e) {
-            REDDIT_INDEX_PAGE.render();
-        });
-    </script>
-
 </body>
 
 </html>

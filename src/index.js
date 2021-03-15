@@ -69,7 +69,6 @@ let REDDIT_INDEX_PAGE = (function () {
         }
 
         console.log(JSON.stringify(post, null , 2));
-        //console.log(JSON.stringify(post, null, 2));
         myPostService.updatePostById(index, post);
 
         $(`#post-${index}-vote`).html(count);

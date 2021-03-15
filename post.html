@@ -13,17 +13,18 @@
     <nav class="navbar navbar-dark navbar-custom navbar-expand-md">
         <a class="navbar-brand" href="./index.html">Home</a>
         <a class="navbar-brand" href="./post.html">New Post</a>
-        <a class="navbar-brand" href="./search.html">Search</a>
+        <a class="navbar-brand" href="./about.html">About</a>
+        <img id="logoTest" src="img/redditLogoBlack.png" alt="Reddit Alien Logo">
     </nav>
 
-    <p>This is the post page</p>
-
     <!-- This is part of the HW7 commit -->
-    <form onsubmit="return false">
-        <label for="content_input">Enter your post here</label>
-        <input id="content_input" type="text"></input>
-        <input type="submit" value="Submit" onclick="submitForm()">
-    </form>
+    <div id="formContainer">
+        <form id="postForm" onsubmit="return false">
+            <label id="content_input_label" for="content_input">Enter your post here</label>
+            <textarea id="content_input"></textarea>
+            <input type="submit" value="Submit" onclick="submitForm()">
+        </form>
+    </div>
 
     <script src="src/services/postService.js"></script>
     <script src="src/post.js"></script>

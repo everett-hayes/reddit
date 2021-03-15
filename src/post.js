@@ -1,9 +1,16 @@
 const myPostService = new postService();
 
 function submitForm() {
+
+    let content  = $('#content_input').val();
+
+    if (content == '') {
+        console.log('empty text is not allowed');
+        return;
+    }
     
     let post = {
-        content: $('#content_input').val(),
+        content: content,
         vote: 0
     }
 
